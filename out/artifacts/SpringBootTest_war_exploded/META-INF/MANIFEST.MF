@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Created-By: IntelliJ IDEA
+Built-By: origa
+Build-Jdk: 17.0.2
+Implementation-Title: SpringBootTest
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: de.gabriel
+Main-Class: ${start-class}
+

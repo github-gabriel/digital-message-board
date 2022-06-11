@@ -1,6 +1,7 @@
 package de.gabriel.springboottest;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
 
 @Entity(name = "messages")
 public class Message {
@@ -11,11 +12,14 @@ public class Message {
 
     String msg;
 
+    String dateTime;
+
     public Message() {
     }
 
-    public Message(String msg) {
+    public Message(String msg, String dateTime) {
         this.msg = msg;
+        this.dateTime = dateTime;
     }
 
     public void setId(Long id) {
@@ -34,4 +38,11 @@ public class Message {
         this.msg = msg;
     }
 
+    public String getDateTime() {
+        return dateTime;
+    }
+
+    public void setDateTime(String dateTime) {
+        this.dateTime = dateTime;
+    }
 }
